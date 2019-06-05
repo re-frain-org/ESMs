@@ -1,4 +1,4 @@
-export class Pointer extends HTMLElement{
+export default class Pointer extends HTMLElement{
 	/**
 	 * Initialize instance of Pointer.
 	 *
@@ -34,7 +34,6 @@ export class Pointer extends HTMLElement{
 		pointer.style.height=`${size}px`;
 		pointer.style.width=`${size}px`;
 		pointer.addEventListener("click",event=>POINTER_STATE=!POINTER_STATE,false);
-		const parentNode=pointer.parentNode;
 		parent.addEventListener("mouseleave",event=>POINTER_STATE=false,false);
 		parent.addEventListener("mousemove",event=>{
 			let {pageX, pageY}=event;

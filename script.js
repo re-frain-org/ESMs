@@ -1,4 +1,4 @@
-import {Pointer} from "./Pointer.js";
+import Pointer from "./Pointer.js";
 customElements.define("x-pointer", Pointer);
 document.body.style.margin="0";
 const container=document.createElement("div");
