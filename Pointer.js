@@ -2,6 +2,8 @@ export class Pointer extends HTMLElement{
 	constructor(){
 		super();
 		const pointer=this;
+		pointer.style.cursor="pointer";
+		pointer.style.display="block";
 		pointer.style.left="0px";
 		pointer.style.position="absolute";
 		pointer.style.top="0px";
