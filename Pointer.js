@@ -11,19 +11,22 @@ export class Pointer extends HTMLElement{
 	/**
 	 * Setup and append to parent element.
 	 *
-	 * @param {HTMLElement} parent as parent element of this.
+	 * @param {HTMLElement} parent as parent element of pointer.
+	 * @param {Number}      size   as size of pointer.
+	 * @param {String}      color  as color of pointer.
 	 * @this {Pointer}
 	 */
-	init(parent, size){
+	init(parent, size, color){
 		const parentHeight=parent.clientHeight,
 			parentWidth=parent.clientWidth,
 			pointer=this,
 			size2=size/2;
 		let POINTER_STATE=false;
 		parent.appendChild(pointer);
+		pointer.style.backgroundColor=color;
 		pointer.style.borderRadius=`${size2}px`;
 		pointer.style.height=`${size}px`;
-		pointer.style.width=`${size}px;`;
+		pointer.style.width=`${size}px`;
 		pointer.addEventListener("click",event=>POINTER_STATE=!POINTER_STATE,false);
 		const parentNode=pointer.parentNode;
 		parent.addEventListener("mouseleave",event=>POINTER_STATE=false,false);

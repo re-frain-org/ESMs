@@ -5,4 +5,4 @@ container.style.height="200px";
 container.style.width="200px";
 document.body.appendChild(container);
 const pointer=new Pointer();
-pointer.init(container, 20);
+pointer.init(container, 20, "red");
