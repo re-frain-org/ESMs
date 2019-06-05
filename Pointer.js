@@ -1,4 +1,4 @@
-export default class Pointer extends HTMLElement{
+export class Pointer extends HTMLElement{
 	constructor(){
 		super();
 		const pointer=this;
