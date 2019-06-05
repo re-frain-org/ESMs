@@ -1,4 +1,10 @@
 export class Pointer extends HTMLElement{
+	/**
+	 * Initialize instance of Pointer.
+	 *
+	 * @constructor
+	 * @this {Pointer}
+	 */
 	constructor(){
 		super();
 		const pointer=this;
